@@ -1,0 +1,21 @@
+.page-header{
+    background-color: #98ffcc;
+    height: 6rem;
+}
+.logo{
+    display: flex;
+    padding: 1.75rem;
+    align-items: end;
+    padding-left: 4rem;
+    color: rgb(63, 63, 63);
+}
+.logo-letters{
+    font-family: Gota;
+    font-size: 35px;
+}
+.small-logo-letters{
+    font-family: Gota;
+    font-size: 25px;
+    bottom: 10px;
+    padding-bottom: 2px;
+}

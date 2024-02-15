@@ -1,9 +1,9 @@
+import { useEffect, useState } from "react"
 import "./HomePage.css"
 
-const HomePage = ({}) => {
+const HomePage = ({darkMode}) => {
     return(
-        <div className="page">
-
+        <div className={`page ${darkMode ? 'dark-mode' : 'light-mode'}`}>
         </div>
     )
 }

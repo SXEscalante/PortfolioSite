@@ -1,12 +1,12 @@
 .page-header{
     background-color: #98ffcc;
-    height: 6rem;
+    height: 5rem;
 }
 .logo{
     display: flex;
-    padding: 1.75rem;
+    padding: 1.35rem;
     align-items: end;
-    padding-left: 4rem;
+    padding-left: 2.5rem;
     color: rgb(63, 63, 63);
 }
 .logo-letters{
@@ -18,4 +18,21 @@
     font-size: 25px;
     bottom: 10px;
     padding-bottom: 2px;
+}
+.dark-mode-button{
+    background: url(/src/Images/pullcord.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 20px;
+    height: 100px;
+    border: none;
+    display: flex;
+    align-items: start;
+    position: absolute;
+    top: 3.8rem;
+    left: 2rem;
+  }
+.dark-mode-button:hover{
+    top: 4.3rem;
 }

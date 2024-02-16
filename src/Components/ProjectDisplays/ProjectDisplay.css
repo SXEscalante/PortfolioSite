@@ -1,0 +1,29 @@
+.project-display{
+    background-color: rgb(65, 65, 65);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 3px solid #98ffcc;
+    border-radius: 10px;
+    width: 60vw;
+    height: 45vh;
+    margin-top: 3rem;
+}
+.default-display{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60vw;
+}
+.project-display:hover .default-display{
+    display: none;
+}
+.light-background{
+    background-color: rgb(223, 223, 223);
+}
+.dark-background{
+    background-color: rgb(65, 65, 65);
+}
+.display-image{
+    max-height: 275px;
+}

@@ -1,10 +1,12 @@
 .page-header{
     background-color: #98ffcc;
-    height: 5rem;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
 }
 .logo{
     display: flex;
-    padding: 1.35rem;
+    padding: 0.7rem;
     align-items: end;
     padding-left: 2.5rem;
     color: rgb(63, 63, 63);
@@ -30,9 +32,20 @@
     display: flex;
     align-items: start;
     position: absolute;
-    top: 3.8rem;
+    top: 3rem;
     left: 2rem;
   }
 .dark-mode-button:hover{
-    top: 4.3rem;
+    top: 3.7rem;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.5rem 4px 0;
+    width: 20vw;
+}
+.header-link{
+    color: rgb(63, 63, 63);
+    text-decoration: none;
 }

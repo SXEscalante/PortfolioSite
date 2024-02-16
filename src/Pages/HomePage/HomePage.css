@@ -1,6 +1,6 @@
 .page{
     background-color: white;
-    height: 100vh;
+    height: calc(100vh - 4rem);
     width: 100%;
 }
 .light-mode{

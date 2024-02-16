@@ -1,7 +1,12 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, useContext } from "react"
+
 import "./HomePage.css"
 
-const HomePage = ({darkMode}) => {
+import DarkModeContext from "../../Context/DarkmodeContext"
+
+const HomePage = () => {
+    const { darkMode } = useContext(DarkModeContext)
+
     return(
         <div className={`page ${darkMode ? 'dark-mode' : 'light-mode'}`}>
         </div>

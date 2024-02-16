@@ -19,10 +19,10 @@ function App() {
 
   return (
     <div className="App">
-      <Header setDarkMode={setDarkMode} darkMode={darkMode}/>
+      <Header />
         <Routes>       
-          <Route path="/" element={<HomePage darkMode={darkMode}/>} />
-          <Route path="/contacts" element={<ContactPage darkMode={darkMode}/>} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/contacts" element={<ContactPage />} />
           <Route path="/about-me" element={<AboutMePage />}/>
           <Route path="/projects" element={<ProjectsPage />}/>
         </Routes>

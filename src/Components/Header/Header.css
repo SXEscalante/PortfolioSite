@@ -3,6 +3,8 @@
     height: 4rem;
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    z-index: 2;
 }
 .logo{
     display: flex;
@@ -34,6 +36,7 @@
     position: absolute;
     top: 3rem;
     left: 2rem;
+    z-index: 1;
   }
 .dark-mode-button:hover{
     top: 3.7rem;

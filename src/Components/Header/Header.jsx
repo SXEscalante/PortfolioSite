@@ -2,9 +2,13 @@ import "./Header.css"
 
 import pullcord from "../../Sounds/pullcord.wav"
 
-import { useNavigate, Link } from "react-router-dom";
+import DarkModeContext from "../../Context/DarkmodeContext"
 
-const Header = ({setDarkMode, darkMode}) => {
+import { useNavigate, Link } from "react-router-dom";
+import { useContext } from "react";
+
+const Header = () => {
+    const { darkMode, setDarkMode } = useContext(DarkModeContext)
 
     const clickCord = () => {
         new Audio(pullcord).play()
@@ -12,18 +16,20 @@ const Header = ({setDarkMode, darkMode}) => {
     }
 
     return(
-        <div className="page-header">
-            <button className="dark-mode-button" onClick={() => (clickCord())}></button>
-                <Link to="/" style={{textDecoration: "none"}}>
-                    <div className="logo">
-                            <span className="logo-letters">S</span><span className="small-logo-letters">x</span><span className="logo-letters">E</span>
-                    </div>
-                </Link>
-            <div className="links">
-                <a className="header-link" href="/projects">Projects</a>
-                <a className="header-link" href="/aboutMe">About Me</a>
-                <a className="header-link" href="/contacts">Contact</a>
+        <div>
+            <div className="page-header">
+                    <Link to="/" style={{textDecoration: "none"}}>
+                        <div className="logo">
+                                <span className="logo-letters">S</span><span className="small-logo-letters">x</span><span className="logo-letters">E</span>
+                        </div>
+                    </Link>
+                <div className="links">
+                    <a className="header-link" href="/projects">Projects</a>
+                    <a className="header-link" href="/about-me">About Me</a>
+                    <a className="header-link" href="/contacts">Contact</a>
+                </div>
             </div>
+            <button className="dark-mode-button" onClick={() => (clickCord())}></button>
         </div>
     )
 }

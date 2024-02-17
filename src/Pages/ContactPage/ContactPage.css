@@ -43,3 +43,6 @@
 .hide-submit-display{
     display: none;
 }
+.submit-button{
+    background-color: white;
+}

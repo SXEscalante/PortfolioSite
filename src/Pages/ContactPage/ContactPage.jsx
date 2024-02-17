@@ -36,7 +36,7 @@ const ContactPage = () => {
     return ( 
         <div className={`page contact-page ${darkMode ? 'dark-mode' : 'light-mode'}`}>
             <h1 className="contact-head">Reach Out!</h1>
-            <h3>If you think I would be a good fit in your company, I'd love to hear from you!</h3>
+            <h3>If you think I would be a good fit for your company, I'd love to hear from you!</h3>
             <div className={`${emailSent ? 'hide-form' : "display-form"}`}>
                 <form className="email-form" onSubmit={(e) => sendEmail(e)}>
                     <div className="input-row">
@@ -49,7 +49,7 @@ const ContactPage = () => {
                     </div>
                     <input className="company-input" type="text" name="company" placeholder="Company" value={company} onChange={(e) => setCompany(e.target.value)}/>
                     <textarea className="email-message" name="message" placeholder="Message" rows={7} value={message} onChange={(e) => setMessage(e.target.value)} required />
-                    <button type="submit">Submit</button>
+                    <button className="submit-button" type="submit">Submit</button>
                 </form>
             </div>
             <div className={`${emailSent ? 'post-submit-display' : 'hide-submit-display'}`}>

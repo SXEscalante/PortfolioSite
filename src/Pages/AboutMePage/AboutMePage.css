@@ -1,0 +1,11 @@
+.background{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+}
+.self-image{
+    height: 250px;
+}

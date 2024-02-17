@@ -7,6 +7,11 @@
 .contact-head{
     padding-top: 4rem;
 }
+.input-row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
 .email-form{
     padding-top: 3rem;
     display: flex;
@@ -15,10 +20,14 @@
     justify-content: center;
     gap: 1rem;
 }
+.hide-form{
+    display: none;
+}
 .email-input{
     width: 200px;
 }
 .email-message{
+    width: 30vw;
     resize: none;
 }
 .company-input{
@@ -30,4 +39,7 @@
     align-items: center;
     padding-top: 5rem;
     gap: 4px;
+}
+.hide-submit-display{
+    display: none;
 }

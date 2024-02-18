@@ -39,28 +39,32 @@ const ContactPage = () => {
             <h3>If you think I would be a good fit for your company, I'd love to hear from you!</h3>
             <div className={`${emailSent ? 'hide-form' : "display-form"}`}>
                 <form className="email-form" onSubmit={(e) => sendEmail(e)}>
-                    <div className="input-row">
-                        <input className="input-box" type="text" placeholder="Firstname" name="firstname" value={firstname || ''} onChange={(e) => setFirstname(e.target.value)} required/>
-                        <input className="input-box" type="text" placeholder="Lastname" name="lastname" value={lastname || ''} onChange={(e) => setLastname(e.target.value)} required/>
+                    <div>
+                        <h3 className="input-label">Your Name</h3>
+                        <div className="input-row">
+                            <input className="input-box" type="text" placeholder="Firstname*" name="firstname" value={firstname || ''} onChange={(e) => setFirstname(e.target.value)} required/>
+                            <input className="input-box" type="text" placeholder="Lastname*" name="lastname" value={lastname || ''} onChange={(e) => setLastname(e.target.value)} required/>
+                        </div>
                     </div>
-                    <div className="input-row">
-                        <input className="input-box" type="text" placeholder="Email*" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
-                        <input className="input-box" type="text" placeholder="Phone #" name="phone-number" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} />
+                    <div>
+                        <h3 className="input-label">Your Contacts</h3>
+                        <div className="input-row">
+                            <input className="input-box" type="text" placeholder="Email*" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+                            <input className="input-box" type="text" placeholder="Phone #" name="phone-number" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} />
+                        </div>
                     </div>
-                    <input className="company-input" type="text" name="company" placeholder="Company" value={company} onChange={(e) => setCompany(e.target.value)}/>
+                    <div>
+                        <h3 className="input-label">Company</h3>
+                        <input className="company-input" type="text" name="company" placeholder="Company" value={company} onChange={(e) => setCompany(e.target.value)}/>
+                    </div>
                     <textarea className="email-message" name="message" placeholder="Message" rows={7} value={message} onChange={(e) => setMessage(e.target.value)} required />
-                    <button className="submit-button" type="submit">Submit</button>
+                    <button className="submit-button" type="submit">Send Email</button>
                 </form>
             </div>
             <div className={`${emailSent ? 'post-submit-display' : 'hide-submit-display'}`}>
                 <p>Your email has been sent, thank you for reaching out!</p>
                 <p>I will be in contact with you soon</p>
                 <button onClick={() => setEmailSent(false)}>OK</button>
-            </div>
-            <div className="contact-info">
-                <p>SXEscalante@gmail.com</p>
-                <p>{"(719) 888-0449"}</p>
-                <p>6410 Black Ridge Vw, Apt 206, Colorado Springs, Colorado, 80924</p>
             </div>
         </div>
     );

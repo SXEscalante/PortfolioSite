@@ -19,3 +19,11 @@ code {
     url('./Fonts/Gota-Regular.woff2') format('woff2'), 
     url('./Fonts/Gota-Regular.woff') format('woff'),
 }
+
+@font-face {
+  font-family: Gota-light;
+  src: url('./Fonts/Gota-Light.eot');
+  src: url('./Fonts/Gota-Light.eot?#iefix') format('embedded-opentype'),
+    url('./Fonts/Gota-Light.woff2') format('woff2'), 
+    url('./Fonts/Gota-Light.woff') format('woff'),
+}

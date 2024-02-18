@@ -1,0 +1,29 @@
+.footer{
+    background-color: #ffcc98;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contacts-head{
+    padding-bottom: 1.5rem;
+}
+.contact-info{
+    display: flex;
+    gap: 3rem;
+}
+.social-button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 70px;
+}
+.LinkedIn{
+    background: url(../../Images/LinkeIin.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.GitHub{
+    background: url(../../Images/GitHub.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}

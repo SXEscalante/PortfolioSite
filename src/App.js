@@ -1,5 +1,6 @@
 //Components
-import Header from "./Components/Header/Header"
+import Navbar from "./Components/Navbar/Navbar"
+import Footer from "./Components/Footer/Footer";
 
 //Pages
 import HomePage from "./Pages/HomePage/HomePage";
@@ -11,21 +12,19 @@ import ProjectsPage from "./Pages/ProjectsPage/ProjectsPage";
 import './App.css';
 
 //General Imports
-import { useEffect, useState } from "react";
-import { Routes, Route, BrowserRouter } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
   return (
     <div className="App">
-      <Header />
+      <Navbar />
         <Routes>       
           <Route path="/" element={<HomePage />} />
           <Route path="/contacts" element={<ContactPage />} />
           <Route path="/about-me" element={<AboutMePage />}/>
           <Route path="/projects" element={<ProjectsPage />}/>
         </Routes>
+      <Footer />
     </div>
   );
 }

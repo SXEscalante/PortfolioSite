@@ -1,12 +1,12 @@
 import pullcord from "../../Sounds/pullcord.wav"
 
-import "./Header.css"
+import "./Navbar.css"
 
 import DarkModeContext from "../../Context/DarkmodeContext"
 import { useNavigate, Link } from "react-router-dom";
 import { useContext } from "react";
 
-const Header = () => {
+const Navbar = () => {
     const { darkMode, setDarkMode } = useContext(DarkModeContext)
 
     const clickCord = () => {
@@ -33,4 +33,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Navbar

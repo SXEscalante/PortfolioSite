@@ -4,8 +4,31 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-
+    width: 55vw;
+}
+.aboutme-page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 .self-image{
     height: 250px;
+    border-radius: 10px;
+}
+.skill-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.skill-tag-container{
+    width: 20vw;
+    display: flex;
+    gap: 12px;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.skill-tag{
+    padding: 8px;
+    border-radius: 7px;
 }

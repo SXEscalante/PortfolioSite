@@ -2,7 +2,7 @@
     color: rgb(200, 200, 200);
 }
 .light-mode{
-    color: black;
+    color: rgb(53, 53, 53);
 }
 .contact-head{
     padding-top: 0rem;
@@ -38,6 +38,9 @@
     padding: 8px;
     width: 34vw;
     resize: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
 }
 .company-input{
     width: 400px;

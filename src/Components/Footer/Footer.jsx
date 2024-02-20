@@ -12,7 +12,7 @@ const Footer = ({}) => {
                     <p>Colorado Springs, Colorado</p>
                 </div>
             </div>
-            <a className="social-button LinkedIn" href="https://www.linkedin.com/in/sebastian-escalante-b074a82ab/" target="_blank"></a>
+            <a className="social-button LinkedIn" href="https://www.linkedin.com/in/sxescalante/" target="_blank"></a>
         </div>
     );
 }

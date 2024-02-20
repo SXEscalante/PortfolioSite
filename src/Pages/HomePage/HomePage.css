@@ -16,5 +16,9 @@
     font-size: 90px;
 }
 .title{
+    margin-top: 1rem;
     font-size: 40px;
+}
+.homepage-discription{
+    margin-top: 2rem;
 }

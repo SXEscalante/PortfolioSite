@@ -2,7 +2,7 @@ import "./Footer.css"
 
 const Footer = ({}) => {
     return ( 
-        <div className="footer">
+        <footer className="footer">
             <a className="social-button GitHub" href="https://github.com/SXEscalante" target="_blank"></a>
             <div className="contacts">
                 <h3 className="contacts-head">Contacts</h3>
@@ -13,7 +13,7 @@ const Footer = ({}) => {
                 </div>
             </div>
             <a className="social-button LinkedIn" href="https://www.linkedin.com/in/sxescalante/" target="_blank"></a>
-        </div>
+        </footer>
     );
 }
  

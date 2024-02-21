@@ -15,7 +15,7 @@ const Navbar = () => {
     }
 
     return(
-        <div>
+        <nav>
             <div className="page-header">
                     <Link to="/" style={{textDecoration: "none"}}>
                         <div className="logo">
@@ -29,7 +29,7 @@ const Navbar = () => {
                 </div>
             </div>
             <button className="dark-mode-button" onClick={() => (clickCord())}></button>
-        </div>
+        </nav>
     )
 }
 

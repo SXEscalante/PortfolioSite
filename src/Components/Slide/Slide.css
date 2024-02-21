@@ -1,0 +1,41 @@
+.slide{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    height: 100%;
+    padding: 0 4rem;
+}
+.description{
+    width: calc(60vw - 8rem);
+    font-size: 25px;
+}
+.arrow{
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: 60px;
+    width: 40px;
+}
+.right-dark-arrow{
+    background: url(../../Images/dark-right-arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.right-light-arrow{
+    background: url(../../Images/light-right-arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.left-dark-arrow{
+    background: url(../../Images/dark-left-arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.left-light-arrow{
+    background: url(../../Images/light-left-arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}

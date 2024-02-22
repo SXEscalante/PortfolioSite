@@ -1,5 +1,4 @@
-import RightProjectDisplay from "../../Components/ProjectDisplays/RightProjectDisplay";
-import LeftProjectDisplay from "../../Components/ProjectDisplays/LeftProjectDisplay";
+import ProjectDisplay from "../../Components/ProjectDisplays/ProjectDisplay";
 
 import "./ProjectsPage.css"
 
@@ -20,27 +19,27 @@ const ProjectsPage = () => {
     const viewDotaSlides = {
         count: 3, 
         about: aboutViewDota, 
-        slideText: ['something', 'another thing']
+        slideText: ['this','something', 'another thing']
     }
 
     const volumeVisualizerSlides = {
         count: 3, 
         about: aboutViewDota, 
-        slideText: ['something', 'another thing']
+        slideText: [aboutViewDota,'something', 'another thing']
     }
 
     const consoleBattleshipSlides = {
         count: 3, 
         about: aboutConsoleBattleship, 
-        slideText: ['something', 'another thing']
+        slideText: [toString(aboutViewDota),'something', 'another thing']
     }
 
     return ( 
         <div className={`projects-page ${darkMode ? 'dark-mode' : 'light-mode'}`}>
             <div className="projects-container" >
-                <RightProjectDisplay darkMode={darkMode} imgPath={ViewDotaHomePage} displayLabel={"ViewDota"} about={aboutViewDota} slides={viewDotaSlides}/>
-                <LeftProjectDisplay darkMode={darkMode}  imgPath={VolumeVisualizer} displayLabel={"Volume visualizer"} about={aboutVolumeVisualizer} slides={volumeVisualizerSlides}/>
-                <RightProjectDisplay darkMode={darkMode} imgPath={ConsoleBattleship} displayLabel={"Console Battleship"} about={aboutConsoleBattleship} slides={consoleBattleshipSlides}/>
+                <ProjectDisplay darkMode={darkMode} imgPath={ViewDotaHomePage} displayLabel={"ViewDota"} about={aboutViewDota} slides={viewDotaSlides} direction={'right'}/>
+                <ProjectDisplay darkMode={darkMode}  imgPath={VolumeVisualizer} displayLabel={"Volume visualizer"} about={aboutVolumeVisualizer} slides={volumeVisualizerSlides} direction={'left'}/>
+                <ProjectDisplay darkMode={darkMode} imgPath={ConsoleBattleship} displayLabel={"Console Battleship"} about={aboutConsoleBattleship} slides={consoleBattleshipSlides} direction={'right'}/>
             </div>
         </div>
     );

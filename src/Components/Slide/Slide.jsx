@@ -1,6 +1,7 @@
 import './Slide.css'
 
-const Slide = ({index, darkMode, about, setSlidePostion, lastSlide}) => {
+const Slide = ({index, darkMode, text, setSlidePostion, lastSlide}) => {
+    console.log(index, text)
     const nextSlide = () => {
         setSlidePostion(prevSlide => prevSlide + 1)
     }
@@ -12,7 +13,7 @@ const Slide = ({index, darkMode, about, setSlidePostion, lastSlide}) => {
     if (index == 0){
         return(
             <div className={`slide ${darkMode ? 'dark-background' : 'light-background'}`}>
-                <p className="description">{about}</p>
+                <p className="description">{text}</p>
                 <button className={`arrow ${darkMode ? 'right-light-arrow' : 'right-dark-arrow'}`} onClick={() => nextSlide()}></button>
             </div>
         )
@@ -20,7 +21,7 @@ const Slide = ({index, darkMode, about, setSlidePostion, lastSlide}) => {
     else if (lastSlide === true){
         return(
             <div className={`slide ${darkMode ? 'dark-background' : 'light-background'}`}>
-                <p className="description">{index}</p>
+                <p className="description">{text}</p>
                 <button className={`arrow ${darkMode ? 'left-light-arrow' : 'left-dark-arrow'}`} onClick={() => prevSlide()}></button>
             </div>
         )
@@ -28,7 +29,7 @@ const Slide = ({index, darkMode, about, setSlidePostion, lastSlide}) => {
     else {
         return ( 
             <div className={`slide ${darkMode ? 'dark-background' : 'light-background'}`}>
-                <p className="description">{index}</p>
+                <p className="description">{text}</p>
                 <div>
                     <button className={`arrow ${darkMode ? 'left-light-arrow' : 'left-dark-arrow'}`} onClick={() => prevSlide()}></button>
                     <button className={`arrow ${darkMode ? 'right-light-arrow' : 'right-dark-arrow'}` } onClick={() => nextSlide()}></button>

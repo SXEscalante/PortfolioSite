@@ -1,4 +1,5 @@
 import Slide from "../Slide/Slide";
+
 import "./ProjectDisplay.css"
 
 import { useEffect, useState } from "react";
@@ -13,7 +14,11 @@ const RightProjectDisplay = ({darkMode, imgPath, displayLabel, slides}) => {
     function createSlides() {
         let newSlideObjs = []
         for(let i = 0; i < slides.count; i++){
-            newSlideObjs.push(<Slide index={i} darkMode={darkMode} about={slides.about} slidePosition={slide} setSlidePostion={setSlide}/>)
+            let lastSlide = false
+            if (i == slides.count - 1){
+                lastSlide = true
+            }
+            newSlideObjs.push(<Slide index={i} darkMode={darkMode} about={slides.about} slidePosition={slide} setSlidePostion={setSlide} lastSlide={lastSlide}/>)
         }
         setSlideObjs(newSlideObjs)
     }
@@ -36,7 +41,7 @@ const RightProjectDisplay = ({darkMode, imgPath, displayLabel, slides}) => {
                 <img className="display-image" src={imgPath} alt="" />
             </div>
             <div className={`hover-display ${darkMode ? 'dark-background' : 'light-background'}`}>
-                <div className="slide-container" style={{transform: translatePercent, transition: 'transfrom 0.5 ease'}}>
+                <div className="slide-container" style={{transform: translatePercent, transition: 'transform 0.5s ease'}}>
                   {slideObjs}
                 </div>
             </div>

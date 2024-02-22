@@ -23,6 +23,12 @@ const ProjectsPage = () => {
         slideText: ['something', 'another thing']
     }
 
+    const volumeVisualizerSlides = {
+        count: 3, 
+        about: aboutViewDota, 
+        slideText: ['something', 'another thing']
+    }
+
     const consoleBattleshipSlides = {
         count: 3, 
         about: aboutConsoleBattleship, 
@@ -33,7 +39,7 @@ const ProjectsPage = () => {
         <div className={`projects-page ${darkMode ? 'dark-mode' : 'light-mode'}`}>
             <div className="projects-container" >
                 <RightProjectDisplay darkMode={darkMode} imgPath={ViewDotaHomePage} displayLabel={"ViewDota"} about={aboutViewDota} slides={viewDotaSlides}/>
-                <LeftProjectDisplay darkMode={darkMode}  imgPath={VolumeVisualizer} displayLabel={"Volume visualizer"} about={aboutVolumeVisualizer}/>
+                <LeftProjectDisplay darkMode={darkMode}  imgPath={VolumeVisualizer} displayLabel={"Volume visualizer"} about={aboutVolumeVisualizer} slides={volumeVisualizerSlides}/>
                 <RightProjectDisplay darkMode={darkMode} imgPath={ConsoleBattleship} displayLabel={"Console Battleship"} about={aboutConsoleBattleship} slides={consoleBattleshipSlides}/>
             </div>
         </div>

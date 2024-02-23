@@ -12,6 +12,16 @@
     width: calc(60vw - 8rem);
     font-size: 25px;
 }
+.slide-text{
+    width: calc(60vw - 8rem);
+    font-size: 15;
+}
+.slide-image{
+    height: 250px;
+}
+.slide-button-container{
+    margin-top: 1.5rem;
+}
 .arrow{
     background: none;
     border: none;

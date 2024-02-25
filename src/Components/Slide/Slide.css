@@ -8,6 +8,22 @@
     height: 100%;
     padding: 0 4rem;
 }
+.light-background{
+    background-color: rgb(204, 204, 204);
+}
+.dark-background{
+    background-color: rgb(53, 53, 53);
+}
+.repo{
+    font-size: 20px;
+    text-decoration: underline;
+}
+.dark-background .repo{
+    color: rgb(204, 204, 204);
+}
+.light-background .repo{
+    color: rgb(53, 53, 53);
+}
 .description{
     width: calc(60vw - 8rem);
     font-size: 25px;

@@ -1,7 +1,6 @@
-import { useEffect, useState, useContext } from "react"
-
 import "./HomePage.css"
 
+import { useContext } from "react"
 import DarkModeContext from "../../Context/DarkmodeContext"
 
 const HomePage = () => {

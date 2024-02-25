@@ -30,12 +30,14 @@ const ProjectsPage = () => {
 
     const viewDotaSlides = {
         count: 4, 
+        repo: 'https://github.com/SXEscalante/ViewDotaFrontEnd/tree/main', 
         slideText: [aboutViewDota, viewDotaSlide1, viewDotaSlide2, viewDotaSlide3],
         slideImages: [null, ViewDotaAccountPage, ViewDotaMatchHistoryPage, ViewDotaMatchDetailsPage]
     }
 
     const volumeVisualizerSlides = {
         count: 3, 
+        repo: 'https://github.com/SXEscalante/Volume-Visualizer', 
         slideText: [aboutVolumeVisualizer, volumeVisualizerSlide1, volumeVisualizerSlide2], 
         slideImages: [null, VolumeVisualizerDefault, VolumeVisualizerSetOutcome]
     }
@@ -43,6 +45,7 @@ const ProjectsPage = () => {
 
     const consoleBattleshipSlides = {
         count: 2, 
+        repo: 'https://github.com/SXEscalante/Battleship-Project/tree/main', 
         slideText: [aboutConsoleBattleship, consoleBattleshipSlide1], 
         slideImages: [null, ConsoleBattleshipPlacement]
     }

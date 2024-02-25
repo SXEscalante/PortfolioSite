@@ -1,9 +1,11 @@
 import './Slide.css'
 
-import image from '../../Images/ViewDotaHomepage.png'
+import { useContext } from "react"
+import DarkModeContext from "../../Context/DarkmodeContext"
 
-const Slide = ({index, darkMode, text, setSlidePostion, lastSlide, imgPath}) => {
-    console.log(index, text)
+const Slide = ({index, text, setSlidePostion, lastSlide, imgPath, repository}) => {
+    const { darkMode } = useContext(DarkModeContext)
+
     const nextSlide = () => {
         setSlidePostion(prevSlide => prevSlide + 1)
     }
@@ -15,6 +17,7 @@ const Slide = ({index, darkMode, text, setSlidePostion, lastSlide, imgPath}) => 
     if (index == 0){
         return(
             <div className={`slide ${darkMode ? 'dark-background' : 'light-background'}`}>
+                <a className='repo' href={repository} target='_blank'>Repository</a>
                 <p className="description">{text}</p>
                 <button className={`arrow ${darkMode ? 'right-light-arrow' : 'right-dark-arrow'}`} onClick={() => nextSlide()}></button>
             </div>

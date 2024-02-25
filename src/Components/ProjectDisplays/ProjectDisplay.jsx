@@ -18,7 +18,7 @@ const ProjectDisplay = ({darkMode, imgPath, displayLabel, slides, direction}) =>
             if (i == slides.count - 1){
                 lastSlide = true
             }
-            newSlideObjs.push(<Slide index={i} darkMode={darkMode} text={slides.slideText[i]} slidePosition={slide} setSlidePostion={setSlide} lastSlide={lastSlide} imgPath={slides.slideImages[i]}/>)
+            newSlideObjs.push(<Slide index={i} darkMode={darkMode} text={slides.slideText[i]} slidePosition={slide} setSlidePostion={setSlide} lastSlide={lastSlide} imgPath={slides.slideImages[i]} repository={slides.repo}/>)
         }
         setSlideObjs(newSlideObjs)
     }

@@ -55,7 +55,7 @@
     padding: 8px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1000px){
     .page-header{
         justify-content: space-between;
     }
@@ -69,5 +69,8 @@
     .dark-mode-button{
         top: 1.5rem;
         left: 1rem;
+    }
+    .dark-mode-button:hover{
+        top: 2rem;
     }
 }

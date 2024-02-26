@@ -7,6 +7,7 @@ import HomePage from "./Pages/HomePage/HomePage";
 import ContactPage from "./Pages/ContactPage/ContactPage";
 import AboutMePage from "./Pages/AboutMePage/AboutMePage";
 import ProjectsPage from "./Pages/ProjectsPage/ProjectsPage";
+import TestPage from "./Pages/TestPage/TestPage";
 
 //Styling
 import './App.css';
@@ -23,8 +24,10 @@ function App() {
           <Route path="/contacts" element={<ContactPage />} />
           <Route path="/about-me" element={<AboutMePage />}/>
           <Route path="/projects" element={<ProjectsPage />}/>
+          <Route path="/test" element={<TestPage />}/>
         </Routes>
       <Footer />
+
     </div>
   );
 }

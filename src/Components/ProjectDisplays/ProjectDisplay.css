@@ -44,3 +44,21 @@
 .display-image{
     max-height: 350px;
 }
+
+@media (max-width: 768px) {
+    .project-display{
+        height: 80vh;
+        width: 80vw;
+    }
+    .default-display{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .display-image{
+        width: 75vw;
+    }
+    .hover-display{
+        height: 80vh;
+        width: 80vw;
+    }
+}

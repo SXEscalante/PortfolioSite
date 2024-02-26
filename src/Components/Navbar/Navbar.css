@@ -54,3 +54,20 @@
     font-weight: 500;
     padding: 8px;
 }
+
+@media (max-width: 768px){
+    .page-header{
+        justify-content: space-between;
+    }
+    .logo{
+        padding-left: .7rem;
+    }
+    .links{
+        width: fit-content;
+        padding-right: 0;
+    }
+    .dark-mode-button{
+        top: 1.5rem;
+        left: 1rem;
+    }
+}

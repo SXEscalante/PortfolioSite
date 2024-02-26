@@ -56,3 +56,15 @@
     background-color: white;
     border-radius: 5px;
 }
+
+@media (max-width: 768px){
+    .input-row{
+        flex-direction: column;
+    }
+    .email-message{
+        width: 300px;
+    }
+    .contact-page{
+        padding: 2rem 0;
+    }
+}

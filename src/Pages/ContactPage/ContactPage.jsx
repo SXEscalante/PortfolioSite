@@ -9,7 +9,6 @@ const ContactPage = () => {
     const [lastname, setLastname] = useState('');
     const [email, setEmail] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
-    const [company, setCompany] = useState('');
     const [message, setMessage] = useState('');
 
     const [emailSent, setEmailSent] = useState(false);
@@ -29,7 +28,6 @@ const ContactPage = () => {
         setLastname('')
         setEmail('')
         setPhoneNumber('')
-        setCompany('')
         setMessage('')
     }
     
@@ -52,10 +50,6 @@ const ContactPage = () => {
                             <input className="input-box" type="text" placeholder="Email*" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
                             <input className="input-box" type="text" placeholder="Phone #" name="phone-number" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} />
                         </div>
-                    </div>
-                    <div>
-                        <h3 className="input-label">Company</h3>
-                        <input className="company-input" type="text" name="company" placeholder="Company" value={company} onChange={(e) => setCompany(e.target.value)}/>
                     </div>
                     <textarea className="email-message" name="message" placeholder="Message" rows={7} value={message} onChange={(e) => setMessage(e.target.value)} required />
                     <button className="submit-button" type="submit">Send Email</button>

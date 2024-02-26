@@ -32,3 +32,23 @@
     padding: 8px;
     border-radius: 7px;
 }
+
+@media (max-width: 768px){
+    .aboutme-page{
+        flex-direction: column;
+    }
+    .page{
+        height: fit-content;
+        min-height: vw;
+    }
+    .background{
+        padding: 1rem;
+        width: 85vw;
+    }
+    .skill-container{
+        margin-bottom: 2rem;
+    }
+    .skill-tag-container{
+        width: 70vw;
+    }
+}

@@ -27,3 +27,17 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+@media (max-width: 768px){
+    .footer{
+        padding: 1rem;
+    }
+    .contact-info{
+        flex-direction: column;
+        gap: .5rem;
+    }
+    .social-button{
+        height: 80px;
+        margin-top: 2rem;
+    }
+}

@@ -42,7 +42,7 @@
     background-color: rgb(65, 65, 65);
 }
 .display-image{
-    max-height: 350px;
+    max-height: 300px;
 }
 
 @media (max-width: 1000px) {

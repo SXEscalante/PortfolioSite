@@ -6,7 +6,7 @@ import LampHeadOn from '../../Images/lamp-head-on.png'
 import "./Navbar.css"
 
 import DarkModeContext from "../../Context/DarkmodeContext"
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate, Link, useLocation } from "react-router-dom";
 import { useContext, useState } from "react";
 
 const Navbar = () => {
@@ -14,6 +14,10 @@ const Navbar = () => {
     const [mouseX, setMouseX] = useState(0);
     const [mouseY, setMouseY] = useState(0);
     const [rotation, setRotation] = useState(0);
+    const location = useLocation()
+    const { pathname } = location
+
+
 
     const lightX = 115
     const lightY = 110
@@ -44,27 +48,50 @@ const Navbar = () => {
         setDarkMode(!darkMode)
     }
 
-    return(
-        <nav>
-            <div className="page-header">
-                    <Link to="/" style={{textDecoration: "none"}}>
-                        <div className="logo">
-                                <span className="logo-letters">S</span><span className="small-logo-letters">x</span><span className="logo-letters">E</span>
-                        </div>
-                    </Link>
-                <div className="links">
-                    <a className="header-link" href="/projects">Projects</a>
-                    <a className="header-link" href="/about-me">About Me</a>
-                    <a className="header-link" href="/contacts">Contact</a>
+    if (pathname === '/' || pathname === '/test'){
+        return(
+            <nav>
+                <div className="page-header">
+                        <Link to="/" style={{textDecoration: "none"}}>
+                            <div className="logo">
+                                    <span className="logo-letters">S</span><span className="small-logo-letters">x</span><span className="logo-letters">E</span>
+                            </div>
+                        </Link>
+                    <div className="links">
+                        <a className="header-link" href="/projects">Projects</a>
+                        <a className="header-link" href="/about-me">About Me</a>
+                        <a className="header-link" href="/contacts">Contact</a>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <img className='lamp-head' src={darkMode ? LampHeadOff : LampHeadOn} alt="" style={{transform: `rotate(${rotation}deg)`}}/>
-                <img className="lamp-base" src={LampBase} alt="" />
-                <button className="dark-mode-button" onClick={() => (clickCord())}></button>
-            </div>
-        </nav>
-    )
+                <div>
+                    <img className={`${darkMode ? 'lamp-head-off' : 'lamp-head-on'}`} src={darkMode ? LampHeadOff : LampHeadOn} alt="" style={{transform: `rotate(${rotation}deg)`}}/>
+                    <img className="lamp-base" src={LampBase} alt="" />
+                    <button className="dark-mode-button" onClick={() => (clickCord())}></button>
+                </div>
+            </nav>
+        )
+    }
+    else {
+        return(
+            <nav>
+                <div className="page-header">
+                        <Link to="/" style={{textDecoration: "none"}}>
+                            <div className="logo">
+                                    <span className="logo-letters">S</span><span className="small-logo-letters">x</span><span className="logo-letters">E</span>
+                            </div>
+                        </Link>
+                    <div className="links">
+                        <a className="header-link" href="/projects">Projects</a>
+                        <a className="header-link" href="/about-me">About Me</a>
+                        <a className="header-link" href="/contacts">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <button className="dark-mode-button no-base" onClick={() => (clickCord())}></button>
+                </div>
+            </nav>
+        )
+    }
 }
 
 export default Navbar

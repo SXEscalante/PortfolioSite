@@ -38,21 +38,36 @@
     left: 3.5rem;
     z-index: 1;
 }
+.no-base{
+    top: 3.2rem;
+}
 .lamp-base{
     display: flex;
     position: absolute;
     width: 175px;
     left: 2rem;
 }
-.lamp-head{
+.lamp-head-off{
     position: absolute;
     height: 120px;
     transform-origin: 15% 20%;
     left: 6.3rem;
     top: 6rem;
+    z-index: 2;
+}
+.lamp-head-on{
+    position: absolute;
+    height: 950px;
+    transform-origin: 20px 25px;
+    left: 6.2rem;
+    top: 6.2rem;
+    z-index: 2;
 }
 .dark-mode-button:hover{
     top: 4.3rem;
+}
+.no-base:hover{
+    top: 3.8rem;
 }
 .links{
     display: flex;

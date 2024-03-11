@@ -1,5 +1,6 @@
 import pullcord from "../../Sounds/pullcord.wav"
 import LampBase from '../../Images/lamp-base.png'
+import LampPost from '../../Images/lamp-post.png'
 import LampHeadOff from '../../Images/lamp-head.png'
 import LampHeadOn from '../../Images/lamp-head-on.png'
 
@@ -63,9 +64,10 @@ const Navbar = () => {
                         <a className="header-link" href="/contacts">Contact</a>
                     </div>
                 </div>
-                <div>
+                <div className="lamp-container">
                     <img className={`${darkMode ? 'lamp-head-off' : 'lamp-head-on'}`} src={darkMode ? LampHeadOff : LampHeadOn} alt="" style={{transform: `rotate(${rotation}deg)`}}/>
                     <img className="lamp-base" src={LampBase} alt="" />
+                    <img className="lamp-post" src={LampPost} alt="" />
                     <button className="dark-mode-button" onClick={() => (clickCord())}></button>
                 </div>
             </nav>
